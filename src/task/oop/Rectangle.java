@@ -1,16 +1,26 @@
 package task.oop;
 
-public class Rectangle {
+public class Rectangle extends Figure {
 
-  private double width;
-  private double height;
+    private double width;
+    private double height;
 
-  public Rectangle(String name, double width, double height) {
-    this.width = width;
-    this.height = height;
-  }
+    public Rectangle(String name, double width, double height) {
+        super(name);
+        this.width = width;
+        this.height = height;
+    }
 
-  public double calculateArea() {
-    return 0;
-  }
+    @Override
+    public double calculateArea() {
+        return width * height;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public double getHeight() {
+        return height;
+    }
 }

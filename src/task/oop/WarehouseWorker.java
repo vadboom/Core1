@@ -1,12 +1,21 @@
 package task.oop;
 
-public class WarehouseWorker {
-  private String shift;
+public class WarehouseWorker extends Employee {
+    private String shift;
 
-  public WarehouseWorker(String name, int age, String shift) {
-    this.shift = shift;
-  }
+    public WarehouseWorker(String name, int age, String shift) {
+        super(name, age);
+        this.shift = shift;
+    }
 
-  public void work() {
-  }
+
+    @Override
+    public void work() {
+        System.out.println(name + " работает на складе в смену " + shift + ".");
+    }
+
+
+    public String getShift() {
+        return shift;
+    }
 }

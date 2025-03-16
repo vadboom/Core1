@@ -1,15 +1,28 @@
 package task.oop;
 
-public class Triangle {
-  private double base;
-  private double height;
+public class Triangle extends Figure {
+    private double base;
+    private double height;
 
-  public Triangle(String name, double base, double height) {
-    this.base = base;
-    this.height = height;
-  }
+    public Triangle(String name, double base, double height) {
+        super(name);
+        this.base = base;
+        this.height = height;
+    }
 
-  public double calculateArea() {
-    return 0;
-  }
+    @Override
+    public double calculateArea() {
+        return (base * height) / 2;
+    }
+
+
+    public double getBase() {
+        return base;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+
 }

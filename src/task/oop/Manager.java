@@ -1,13 +1,21 @@
 package task.oop;
 
-public class Manager {
+public class Manager extends Employee {
 
-  private String department;
+    private String department;
 
-  public Manager(String name, int age, String department) {
-    this.department = department;
-  }
+    public Manager(String name, int age, String department) {
+        super(name, age);
+        this.department = department;
+    }
 
-  public void work() {
-  }
+    @Override
+    public void work() {
+        System.out.println(name + " управляет отделом " + department + ".");
+    }
+
+
+    public String getDepartment() {
+        return department;
+    }
 }

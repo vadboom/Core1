@@ -118,7 +118,7 @@ public class Methods {
             return "Ошибка: недостаточно средств в кошельке.";
         }
         wallet -= amount;
-        return "Остаток в кошельке: "+ wallet;
+        return "Остаток в кошельке: " + wallet;
     }
 
     public String deposit(int amount) {
@@ -127,6 +127,6 @@ public class Methods {
             return "Ошибка: сумма пополнения слишком большая (максимум 10 000 рублей).";
         }
         wallet += amount;
-        return "Баланс кошелька : "+ wallet;
+        return "Баланс кошелька : " + wallet;
     }
 }

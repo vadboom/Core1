@@ -22,8 +22,8 @@ public class Child1 extends Parent {
     }
 
     public String concatenateStrings(String str1, String str2) {
-        String str3=str1.concat(str2);
-        int halfLength=str3.length()/2;
-        return str3.substring(0,halfLength);
+        String str3 = str1.concat(str2);
+        int halfLength = str3.length() / 2;
+        return str3.substring(0, halfLength);
     }
 }

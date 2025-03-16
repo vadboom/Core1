@@ -20,7 +20,6 @@ public class Methods {
         return String.valueOf(sum);
     }
 
-    //Создать метод, который принимает строку и число. Если число внутри строки больше переданного числа, вернуть false; в противном случае вернуть true.
     public boolean compareStringNumberWithInt(String str, int num) {
         int numFromString = Integer.parseInt(str);
         return numFromString <= num;
